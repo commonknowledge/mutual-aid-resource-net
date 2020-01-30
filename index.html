@@ -136,9 +136,14 @@
                 .mobile-stretch {
                     align-self: center;
                 }
+
+                .mobile-expand {
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
             }
 
-            @media (min-width: 72rem) {
+            @media (min-width: 64rem) {
                 .columns {
                     flex-direction: row;
                 }
@@ -155,11 +160,6 @@
                     margin-top: unset;
                     margin-right: 9rem;
                 }
-
-                .mobile-expand {
-                    margin-left: 2rem;
-                    margin-right: 2rem;
-                }
             }
 
 
@@ -174,7 +174,6 @@
                 color: white;
                 padding: 1rem 2rem;
                 min-width: 9rem;
-                max-width: 18rem;
                 text-align: center;
                 transition: opacity 150ms ease-in-out;
             }
@@ -224,8 +223,8 @@
                     </p>
                 </div>
             </section>
-
-            <iframe" class="flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" style="background: transparent; height: 100vh; min-height: 40rem;"></iframe>
+            <iframe class="airtable-embed flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on&layout=card" frameborder="0" onmousewheel="" style="background: transparent; border: 1px solid #ccc; height: 80vh"></iframe>
+            <!-- <iframe" class="airtable-embed flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" style="background: transparent; height: 100vh; min-height: 40rem;"></iframe> -->
         </div>
         
 		<!-- Matomo Image Tracker-->
