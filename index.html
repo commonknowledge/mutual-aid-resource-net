@@ -114,13 +114,9 @@
                 margin-bottom: 5rem;
             }
 
-            .columns > .flex {
-                flex: 1;
-            }
-
             .mobile-expand {
-                margin-left: -2rem;
-                margin-right: -2rem;
+                margin-left: -1rem;
+                margin-right: -1rem;
             }
 
             .flex-space {
@@ -132,14 +128,13 @@
                 align-self: stretch;
             }
 
+            .hidden {
+                display: hidden;
+            }
+
             @media (min-width: 42rem) {
                 .mobile-stretch {
-                    align-self: center;
-                }
-
-                .mobile-expand {
-                    margin-left: 2rem;
-                    margin-right: 2rem;
+                    align-self: flex-start;
                 }
             }
 
@@ -157,8 +152,12 @@
                 }
 
                 .columns > *:not(:last-child) {
-                    margin-top: unset;
+                    margin-bottom: unset;
                     margin-right: 9rem;
+                }
+
+                .columns > .flex {
+                    flex: 1;
                 }
             }
 
@@ -190,6 +189,28 @@
             a:hover {
                 opacity: 0.5;
             }
+
+            .stretch-in {
+                overflow: hidden;
+                transition: max-height 500ms ease-out, opacity 500ms ease-in-out;
+                max-height: 300px;
+                opacity: 1;
+            }
+
+            .stretch-in.hidden {
+                max-height: 0px;
+                opacity: 0;
+            }
+
+            .airtable-embed {
+                height: 100%;
+            }
+
+            @media (min-width: 64em) {
+                .airtable-embed {
+                    height: unset;
+                }
+            }
         </style>
     </head>
 
@@ -207,24 +228,36 @@
                 <span class="flex-space"></span>
 
                 <div>
-                    <h3>
-                        <a href="https://commonknowledge.coop">
-                            About Common Knowledge
-                        </a>
-                    </h3>
+                    <script>
+                        function showAbout(event) {
+                            event.preventDefault()
+                            document.getElementById('about-us').classList.toggle('hidden')
+                        }
+                    </script>
 
                     <p>
-                        We’re a not-for-profit workers cooperative. Working directly with grassroots activists, we design digital tools that make radical change possible.
+                        <a href="#" onclick="showAbout(event)">
+                            About Common Knowledge
+                        </a>
                     </p>
-                    <p>
-                        Please contact us with any feedback:<br>
-                        <a target="_blank" href="mailto:spaces@commonknowledge.coop">spaces@commonknowledge.coop</a><br />
-                        <!-- <a href="javascript:window.Metomic('ConsentManager:show')">Manage cookies</a> -->
-                    </p>
+
+                    <div id="about-us" class="stretch-in hidden">
+                        <p>
+                            We’re a not-for-profit workers cooperative. Working directly with grassroots activists, we design digital tools that make radical change possible.
+                        </p>
+
+                        <p>
+                            Please contact us if you’d like to edit a description or give us feedback
+                        </p>
+
+                        <p>
+                            Please contact us with any feedback:<br>
+                            <a target="_blank" href="mailto:spaces@commonknowledge.coop">spaces@commonknowledge.coop</a><br />
+                        </p>
+                    </div>
                 </div>
             </section>
-            <iframe class="airtable-embed flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on&layout=card" frameborder="0" onmousewheel="" style="background: transparent; border: 1px solid #ccc; height: 80vh"></iframe>
-            <!-- <iframe" class="airtable-embed flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" style="background: transparent; height: 100vh; min-height: 40rem;"></iframe> -->
+            <iframe class="airtable-embed flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on&layout=card" frameborder="0" onmousewheel="" style="background: transparent; border: 1px solid #ccc; height: 100vh;"></iframe>
         </div>
         
 		<!-- Matomo Image Tracker-->
