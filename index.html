@@ -8,6 +8,7 @@
         <meta charset="utf-8">
 
         <title>Mutual Aid Resource Network</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="A collectively maintained list of welcoming, low-cost, accessible spaces">
         <meta name="author" content="Common Knowledge Co-operative">
         <meta name="theme-color" content="#2CBC66">
@@ -49,11 +50,11 @@
             body {
                 position: relative;
                 box-sizing: border-box;
-                padding: 2rem;
+                padding: 1rem;
                 font-family: IBM Plex Sans;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 18px;
+                font-size: 15px;
                 line-height: 120%;
                 width: 100%;
                 height: 100%;
@@ -72,7 +73,7 @@
                 font-family: IBM Plex Sans;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 18px;
+                font-size: inherit;
                 line-height: 120%;
             }
 
@@ -85,6 +86,15 @@
                 margin-top: 0;
                 margin-bottom: 1rem;
             }
+
+            @media (min-width: 42rem) {
+                body {
+                    padding: 2rem;
+                    font-size: 18px;
+                }
+            }
+
+            /** Layout */
 
             .columns {
                 position: relative;
@@ -101,11 +111,31 @@
             }
 
             .columns > *:not(:last-child) {
-                margin-right: 9rem;
+                margin-bottom: 5rem;
             }
 
-            .columns > * {
-                position: relative;
+            .columns > .flex {
+                flex: 1;
+            }
+
+            .mobile-expand {
+                margin-left: -2rem;
+                margin-right: -2rem;
+            }
+
+            .flex-space {
+                flex: 1;
+                min-height: 3rem;
+            }
+
+            .mobile-stretch {
+                align-self: stretch;
+            }
+
+            @media (min-width: 42rem) {
+                .mobile-stretch {
+                    align-self: center;
+                }
             }
 
             @media (min-width: 72rem) {
@@ -113,18 +143,27 @@
                     flex-direction: row;
                 }
 
+                .columns > * {
+                    position: relative;
+                }
+
                 .columns > .small {
                     max-width: 400px;
                 }
 
-                .columns > .flex {
-                    flex: 1;
+                .columns > *:not(:last-child) {
+                    margin-top: unset;
+                    margin-right: 9rem;
+                }
+
+                .mobile-expand {
+                    margin-left: 2rem;
+                    margin-right: 2rem;
                 }
             }
 
-            .flex-space {
-                flex: 1
-            }
+
+            /** Components */
 
             .button {
                 display: inline-block;
@@ -135,6 +174,7 @@
                 color: white;
                 padding: 1rem 2rem;
                 min-width: 9rem;
+                max-width: 18rem;
                 text-align: center;
                 transition: opacity 150ms ease-in-out;
             }
@@ -161,7 +201,7 @@
                 <p>
                     There’s a huge demand for these kind of spaces in London, particularly accessible ones. If you know of any not listed here, please add it.
                 </p>
-                <a class="button" href="#">
+                <a class="button mobile-stretch" href="#">
                     Add a space
                 </a>
 
@@ -179,22 +219,18 @@
                     </p>
                     <p>
                         Please contact us with any feedback:<br>
-                        <a target="_blank" href="mailto:spaces@commonknowledge.coop">spaces@commonknowledge.coop</a>
+                        <a target="_blank" href="mailto:spaces@commonknowledge.coop">spaces@commonknowledge.coop</a><br />
+                        <!-- <a href="javascript:window.Metomic('ConsentManager:show')">Manage cookies</a> -->
                     </p>
                 </div>
             </section>
 
-            <iframe class="flex" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            <iframe" class="flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" style="background: transparent; height: 100vh; min-height: 40rem;"></iframe>
         </div>
         
 		<!-- Matomo Image Tracker-->
 		<noscript>
 			<img src="https://commonknowledgecoop.matomo.cloud/matomo.php?idsite=2&amp;rec=1" style="border:0" alt="" />
 		</noscript>
-		<!-- End Matomo -->
-
-		<footer class="has-text-centered">
-			<a href="javascript:window.Metomic('ConsentManager:show')">Manage cookies.</a>
-		</footer>
     </body>
 </html>
