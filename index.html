@@ -1,264 +1,271 @@
 <!doctype html>
 
 <html lang="en">
-    <head>
-	    <script src="https://config.metomic.io/config.js?id=prj:9165708e-f21d-4bd5-8728-c0a0ceec94ea" crossorigin charset="utf-8"></script>
-		<script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
+<head>
+  <script src="https://config.metomic.io/config.js?id=prj:9165708e-f21d-4bd5-8728-c0a0ceec94ea" crossorigin charset="utf-8"></script>
+  <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
 
-        <meta charset="utf-8">
+  <meta charset="utf-8">
 
-        <title>Mutual Aid Resource Network</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A collectively maintained list of welcoming, low-cost, accessible spaces">
-        <meta name="author" content="Common Knowledge Co-operative">
-        <meta name="theme-color" content="#2CBC66">
-        <meta property="og:title" content="A collectively maintained list of bookable spaces"/>
-        <meta property="og:description" content="There’s huge demand for welcoming, low-cost, accessible spacesin London. Search the list and contribute more info."/>
-        <meta property="og:image" content="https://spaces.commonknowledge.coop/share-card.png"/>
-        <meta property="og:url" content="https://spaces.commonknowledge.coop"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:site_name" content="Mutual Aid Resource Network"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="@cmmonknowledge"/>
-        <meta name="twitter:title" content="A collectively maintained list of bookable spaces"/>
-        <meta name="twitter:description" content="There’s huge demand for welcoming, low-cost, accessible spaces in London. Search the list and contribute more info."/>
-        <meta name="twitter:image" content="https://spaces.commonknowledge.coop/share-card.png"/>
+  <title>Mutual Aid Resource Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collectively maintained list of welcoming, low-cost, accessible spaces">
+  <meta name="author" content="Common Knowledge Co-operative">
+  <meta name="theme-color" content="#2CBC66">
+  <meta property="og:title" content="A collectively maintained list of bookable spaces"/>
+  <meta property="og:description" content="There’s huge demand for welcoming, low-cost, accessible spacesin London. Search the list and contribute more info."/>
+  <meta property="og:image" content="https://spaces.commonknowledge.coop/share-card.png"/>
+  <meta property="og:url" content="https://spaces.commonknowledge.coop"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Mutual Aid Resource Network"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@cmmonknowledge"/>
+  <meta name="twitter:title" content="A collectively maintained list of bookable spaces"/>
+  <meta name="twitter:description" content="There’s huge demand for welcoming, low-cost, accessible spaces in London. Search the list and contribute more info."/>
+  <meta name="twitter:image" content="https://spaces.commonknowledge.coop/share-card.png"/>
 
-        <!-- Matomo -->
-        <script type="text/javascript" type="text/x-metomic" data-micropolicy="user-tracking">
-            var _paq = window._paq || [];
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-                var u="https://commonknowledgecoop.matomo.cloud/";
-                _paq.push(['setTrackerUrl', u+'matomo.php']);
-                _paq.push(['setSiteId', '2']);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/commonknowledgecoop.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-            })();
+  <!-- Matomo -->
+  <script type="text/javascript" type="text/x-metomic" data-micropolicy="user-tracking">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://commonknowledgecoop.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/commonknowledgecoop.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500&display=swap" rel="stylesheet">
+  <style>
+  html {
+    position: relative;
+    background: #F4FFF9;
+    height: 100%;
+  }
+
+  body {
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -0.25px;
+  }
+
+  h2 {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+    line-height: 120%;
+  }
+
+  h3 {
+    font-weight: inherit;
+    font-size: inherit;
+  }
+
+  h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 42rem) {
+    body {
+      padding: 2rem;
+      font-size: 18px;
+    }
+  }
+
+  /** Layout */
+
+  .columns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100%;;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .columns > *:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  .mobile-expand {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .flex-space {
+    flex: 1;
+    min-height: 3rem;
+  }
+
+  .mobile-stretch {
+    align-self: stretch;
+  }
+
+  .hidden {
+    display: hidden;
+  }
+
+  @media (min-width: 42rem) {
+    .mobile-stretch {
+      align-self: flex-start;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .columns {
+      flex-direction: row;
+    }
+
+    .columns > * {
+      position: relative;
+    }
+
+    .columns > .small {
+      max-width: 400px;
+    }
+
+    .columns > *:not(:last-child) {
+      margin-bottom: unset;
+      margin-right: 9rem;
+    }
+
+    .columns > .flex {
+      flex: 1;
+    }
+  }
+
+
+  /** Components */
+
+  .button {
+    display: inline-block;
+    background: #2CBC66;
+    border-radius: 3px;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    min-width: 9rem;
+    text-align: center;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+  }
+
+  a {
+    color: inherit;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+
+  .stretch-in {
+    overflow: hidden;
+    transition: max-height 500ms ease-out, opacity 500ms ease-in-out;
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  .stretch-in.hidden {
+    max-height: 0px;
+    opacity: 0;
+  }
+
+  .airtable-embed {
+    height: calc(100vh - 2rem)
+  }
+
+  @media (min-width: 64em) {
+    .airtable-embed {
+      height: unset;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div class="columns">
+    <section class="small rows">
+      <h1>A collectively maintained list of welcoming and low-cost spaces</h1>
+      <p>
+        There’s a huge demand for meeting and event spaces in London, particularly those that are fully accessible, low cost or free, and welcoming to a wide range of activists and organisers.
+      </p>
+      <p>
+        Our goal is to make it easier for anyone to arrange meetings and events, for the community not for profit. If you know of any suitable spaces that are not listed here, please add them.
+      </p>
+      <a class="button mobile-stretch" href="https://airtable.com/shrqk72B59Qeh6d0v" target="_blank">
+        Add a space
+      </a>
+
+      <span class="flex-space"></span>
+
+      <div>
+        <script>
+        function showAbout(event) {
+          event.preventDefault()
+          document.getElementById('about-us').classList.toggle('hidden')
+        }
         </script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500&display=swap" rel="stylesheet">
-        <style>
-            html {
-                position: relative;
-                background: #F4FFF9;
-                height: 100%;
-            }
 
-            body {
-                position: relative;
-                box-sizing: border-box;
-                padding: 1rem;
-                font-family: IBM Plex Sans;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 15px;
-                line-height: 120%;
-                width: 100%;
-                height: 100%;
-            }
+        <p>
+          <a href="#" onclick="showAbout(event)">
+            About Common Knowledge
+          </a>
+        </p>
 
-            h1 {
-                font-family: IBM Plex Sans;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 32px;
-                line-height: 110%;
-                letter-spacing: -0.25px;
-            }
+        <div id="about-us" class="stretch-in hidden">
+          <p>
+            We’re a not-for-profit workers cooperative. Working directly with grassroots activists, we design digital tools that make radical change possible.
+          </p>
 
-            h2 {
-                font-family: IBM Plex Sans;
-                font-style: normal;
-                font-weight: normal;
-                font-size: inherit;
-                line-height: 120%;
-            }
+          <p>
+            You can read more about the process of creating this resource on our blog. If you'd like to share your own experiences of booking spaces in London, please fill out this <a href="https://commonknowledge.typeform.com/to/P4QEeE" target="_blank">survey.</a> 
+          </p>
 
-            h3 {
-                font-weight: inherit;
-                font-size: inherit;
-            }
-
-            h1, h2, h3, p {
-                margin-top: 0;
-                margin-bottom: 1rem;
-            }
-
-            @media (min-width: 42rem) {
-                body {
-                    padding: 2rem;
-                    font-size: 18px;
-                }
-            }
-
-            /** Layout */
-
-            .columns {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                min-height: 100%;;
-            }
-
-            .rows {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .columns > *:not(:last-child) {
-                margin-bottom: 5rem;
-            }
-
-            .mobile-expand {
-                margin-left: -1rem;
-                margin-right: -1rem;
-            }
-
-            .flex-space {
-                flex: 1;
-                min-height: 3rem;
-            }
-
-            .mobile-stretch {
-                align-self: stretch;
-            }
-
-            .hidden {
-                display: hidden;
-            }
-
-            @media (min-width: 42rem) {
-                .mobile-stretch {
-                    align-self: flex-start;
-                }
-            }
-
-            @media (min-width: 64rem) {
-                .columns {
-                    flex-direction: row;
-                }
-
-                .columns > * {
-                    position: relative;
-                }
-
-                .columns > .small {
-                    max-width: 400px;
-                }
-
-                .columns > *:not(:last-child) {
-                    margin-bottom: unset;
-                    margin-right: 9rem;
-                }
-
-                .columns > .flex {
-                    flex: 1;
-                }
-            }
-
-
-            /** Components */
-
-            .button {
-                display: inline-block;
-                background: #2CBC66;
-                border-radius: 3px;
-                color: inherit;
-                text-decoration: none;
-                color: white;
-                padding: 1rem 2rem;
-                min-width: 9rem;
-                text-align: center;
-                transition: opacity 150ms ease-in-out;
-            }
-
-            .button:hover {
-                opacity: 0.8;
-            }
-
-            a {
-                color: inherit;
-                transition: opacity 150ms ease-in-out;
-            }
-
-            a:hover {
-                opacity: 0.5;
-            }
-
-            .stretch-in {
-                overflow: hidden;
-                transition: max-height 500ms ease-out, opacity 500ms ease-in-out;
-                max-height: 300px;
-                opacity: 1;
-            }
-
-            .stretch-in.hidden {
-                max-height: 0px;
-                opacity: 0;
-            }
-
-            .airtable-embed {
-                height: calc(100vh - 2rem)
-            }
-
-            @media (min-width: 64em) {
-                .airtable-embed {
-                    height: unset;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="columns">
-            <section class="small rows">
-                <h1>A collectively maintained list of welcoming and low-cost spaces</h1>
-                <p>
-                    There’s a huge demand for these kind of spaces in London, particularly accessible ones. If you know of any not listed here, please add it.
-                </p>
-                <a class="button mobile-stretch" href="https://airtable.com/shrqk72B59Qeh6d0v">
-                    Add a space
-                </a>
-
-                <span class="flex-space"></span>
-
-                <div>
-                    <script>
-                        function showAbout(event) {
-                            event.preventDefault()
-                            document.getElementById('about-us').classList.toggle('hidden')
-                        }
-                    </script>
-
-                    <p>
-                        <a href="#" onclick="showAbout(event)">
-                            About Common Knowledge
-                        </a>
-                    </p>
-
-                    <div id="about-us" class="stretch-in hidden">
-                        <p>
-                            We’re a not-for-profit workers cooperative. Working directly with grassroots activists, we design digital tools that make radical change possible.
-                        </p>
-
-                        <p>
-                            Please contact us if you’d like to edit a listing or give us feedback:<br>
-                            <a target="_blank" href="mailto:spaces@commonknowledge.coop">spaces@commonknowledge.coop</a><br />
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <iframe class="airtable-embed flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on&layout=card" frameborder="0" onmousewheel="" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          <p>
+            Please contact us if you’d like to edit a listing or give us feedback:<br>
+            <a target="_blank" href="mailto:spaces@commonknowledge.coop">spaces@commonknowledge.coop</a><br />
+          </p>
         </div>
+      </div>
+    </section>
+    <iframe class="airtable-embed flex mobile-expand" src="https://airtable.com/embed/shrpedvMIYYbaIvWc?backgroundColor=yellow&viewControls=on&layout=card" frameborder="0" onmousewheel="" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </div>
 
-		<!-- Matomo Image Tracker-->
-		<noscript>
-			<img src="https://commonknowledgecoop.matomo.cloud/matomo.php?idsite=2&amp;rec=1" style="border:0" alt="" />
-		</noscript>
-    </body>
+  <!-- Matomo Image Tracker-->
+  <noscript>
+    <img src="https://commonknowledgecoop.matomo.cloud/matomo.php?idsite=2&amp;rec=1" style="border:0" alt="" />
+  </noscript>
+</body>
 </html>
